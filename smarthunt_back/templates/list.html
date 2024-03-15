@@ -1,0 +1,71 @@
+{% extends 'body.html' %}
+
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href={% static 'lib/datatables_2.0.1/datatables.min.css' %}>
+  <script src={% static 'lib/datatables_2.0.1/datatables.min.js' %}></script>
+{% endblock head %}
+
+{% block head_list %}
+
+{% endblock head_list %}
+
+{% block bradcrumb %}
+
+<div class="col-12 px-4 my-2">
+  <ol class="breadcrumb float-sm-end">
+    <li class="breadcrumb-item"><a href="#"><i class="bi-house small"></i> {{prev}}</a></li>
+    <li class="breadcrumb-item active">{{title}}</li>
+  </ol>
+</div>
+
+{% endblock bradcrumb %}
+
+{% block content %}
+<div class="container">
+  <h3 class="display-3 text-center mx-auto my-3">{{title}}</h3>
+</div>
+
+  <div class="card container-sm mx-auto mb-5 col-md-12 p-0" style="width: 75rem;">
+
+    <div class="card-body">
+      <table class="table table-striped text-sm-start" id="data">
+        <thead>
+          {% block columns %}
+
+          {% endblock columns %}
+        </thead>
+        <tbody>
+          {% block rows %}
+
+          {% endblock rows %}
+
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer border-0">
+      {% block end_list_btns %}
+
+      {% endblock end_list_btns %}
+    </div>
+  </div>
+
+{% endblock content %}
+
+{% block js %}
+  <script type="application/javascript">
+    console.log('cargando DataTable')
+    let table = new DataTable('#data', {
+      responsive: {
+        details: {
+          type:'column'
+        }
+      },
+      autoWidth: false,
+      language: {
+        url:"{% static 'lib/datatables_2.0.1/spanish.json' %}"
+      }
+    });
+  </script>
+{% endblock js %}

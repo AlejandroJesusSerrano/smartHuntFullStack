@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% load static %}
+
+{% block body %}
+<body>
+  <div class="wrapper">
+
+    {% include 'navbar.html' %}
+
+    {% block bradcrumb %}
+
+    {% endblock bradcrumb %}
+
+
+    <div class="content-wrapper">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  <!-- Bootstrap 5.3.3 -->
+  <script src={% static 'lib/bootstrap_5.3.3/js/bootstrap.bundle.min.js' %}></script>
+  {% block js %}
+
+  {% endblock js %}
+  </body>
+{% endblock body %}

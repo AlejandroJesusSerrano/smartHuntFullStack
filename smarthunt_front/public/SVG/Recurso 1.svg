@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 434.84 117.44">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Bahnschrift-BoldCondensed, Bahnschrift;
+        font-size: 60px;
+        font-variation-settings: 'wght' 700, 'wdth' 75;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #3666af;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #3666af;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-width: .75px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: .04em;
+      }
+
+      .cls-4 {
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <g>
+        <polyline class="cls-4" points="219.13 72.1 254.93 61.64 252.97 39.62 197.41 62.08 183.32 115.92"/>
+        <line class="cls-4" x1="281.15" y1="115.92" x2="254.93" y2="61.64"/>
+        <polyline class="cls-2" points="198.97 48.62 184.89 48.62 195.06 27.1 199.76 27.1 264.32 27.1 176.28 27.1"/>
+        <path class="cls-2" d="M198.58,3.23l1.17,23.87-1.17-23.87Z"/>
+        <polyline class="cls-2" points="242.02 27.1 242.02 3.23 216.19 9.88 198.58 3.23"/>
+        <path class="cls-3" d="M188.43,27.61c.76-1.15,2.99-.03,10.08,0,7.27.03,9.59-1.12,10.28,0,1.28,2.09-4.22,10.5-11.05,10.05-6.23-.41-10.67-8-9.31-10.05Z"/>
+      </g>
+      <text class="cls-1" transform="translate(1.11 77.77)"><tspan x="0" y="0">&lt;</tspan><tspan class="cls-5" x="16.08" y="0">SM</tspan><tspan x="74.06" y="0">ART&gt;</tspan></text>
+      <text class="cls-1" transform="translate(286.07 78.21)"><tspan x="0" y="0">&lt;H</tspan><tspan class="cls-5" x="41.57" y="0">U</tspan><tspan class="cls-6" x="65.65" y="0">N</tspan><tspan x="94.78" y="0">T/&gt;</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-
+import ButtonUser from "../ButtonUser/ButtonUser"
 
 export const NavBar = () => {
   return (
@@ -11,7 +11,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mx-5 mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mx-5 mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active text-primary" aria-current="page" href="#">Inicio</a>
             </li>
@@ -54,6 +54,9 @@ export const NavBar = () => {
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form> */}
+        </div>
+        <div className='mx-5'>
+          <ButtonUser/>
         </div>
       </div>
     </nav>

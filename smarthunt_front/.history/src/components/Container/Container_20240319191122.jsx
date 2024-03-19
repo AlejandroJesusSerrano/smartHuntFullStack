@@ -6,7 +6,7 @@ export const Container = () => {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer saludo="Hola Mundo"/>
+      <ItemListContainer/>
     </div>
   )
 }

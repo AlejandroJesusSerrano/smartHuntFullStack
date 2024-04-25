@@ -1,17 +1,14 @@
 import { useState } from "react"
 
 export const Counter = () => {
-  let pcCant = 6
-  const [stock, setStock] = useState(pcCant)
+  const stock = 4
   const [click, setClick] = useState(0)
   const [date, setDate] = useState(Date)
-  const [msg, setMsg] = useState(`Disponibles: ${pcCant} `)
+  const [msg, setMsg] = useState(`Disponibles: ${stock - click}`)
 
   const stockControl = () => {
       if (click < stock) {
         setClick (click + 1)
-        setStock (pcCant--)
-        setMsg(`Disponibles ${pcCant - click}`)
         setDate (Date())
       }
       else {

@@ -10,7 +10,7 @@ export const Counter = () => {
   const stockControl = () => {
       if (click < stock) {
         setClick (click + 1)
-        setStock (pcCant--)
+        setStock(pcCant - 1)
         setMsg(`Disponibles ${pcCant - click}`)
         setDate (Date())
       }

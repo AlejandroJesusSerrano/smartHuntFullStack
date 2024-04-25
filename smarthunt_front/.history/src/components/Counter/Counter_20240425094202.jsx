@@ -5,13 +5,12 @@ export const Counter = () => {
   const [stock, setStock] = useState(pcCant)
   const [click, setClick] = useState(0)
   const [date, setDate] = useState(Date)
-  const [msg, setMsg] = useState(`Disponibles: ${pcCant} `)
+  const [msg, setMsg] = useState(`Disponibles: ${stock - click}`)
 
   const stockControl = () => {
       if (click < stock) {
         setClick (click + 1)
-        setStock (pcCant--)
-        setMsg(`Disponibles ${pcCant - click}`)
+        setStock(pcCant -1)
         setDate (Date())
       }
       else {

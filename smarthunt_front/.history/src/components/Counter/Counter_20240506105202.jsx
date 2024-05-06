@@ -7,7 +7,7 @@ export const Counter = () => {
   const [date, setDate] = useState(Date)
   const [msg, setMsg] = useState(`Disponibles: ${pcQ} `)
 
-  const stockAdd = () => {
+  const stockControl = () => {
       if (quant < stock) {
         setQuant (quant + 1)
         setStock (pcQ--)
@@ -19,24 +19,12 @@ export const Counter = () => {
       }
     }
 
-  const stockRemove = () => {
-    if (quant !== 0) {
-      setQuant (quant - 1)
-      setStock (pcQ++)
-      setMsg(`Disponibles ${pcQ - quant}`)
-      setDate (Date())
-    }
-    else {
-      setMsg('Lo sentimos, debe agregar al menos un producto')
-    }
-  }
-
   return (
     <div className="card col col-2">
-      <div className="card-header d-flex justify-content-evenly">
-        <button type="button" className="btn btn-primary btn-sm" onClick={stockAdd}>+</button>
+      <div className="card-header row-cols-1">
+        <button type="button" className="btn btn-primary btn-sm" onClick={stockControl}>+</button>
         <h4>{quant}</h4>
-        <button type="button" className="btn btn-danger btn-sm" onClick={stockRemove}>-</button>
+        <button type="button" className="btn btn-danger btn-sm" onClick={stockControl}>-</button>
       </div>
       <div className="card-body">
         <h5>{msg}</h5>

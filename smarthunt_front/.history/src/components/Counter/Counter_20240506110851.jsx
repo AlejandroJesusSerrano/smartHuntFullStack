@@ -23,11 +23,11 @@ export const Counter = () => {
     if (quant !== 0) {
       setQuant (quant - 1)
       setStock (pcQ++)
-      setMsg(`Disponibles ${pcQ - quant}`)
+      setMsg(`Disponibles ${pcQ + quant}`)
       setDate (Date())
     }
     else {
-      setMsg('Lo sentimos, debe agregar al menos un producto')
+      setMsg('Lo sentimos, no tenemos mas stock')
     }
   }
 
